@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KUBİLAY BİRDAL SAÇ TASARIM | Darıca Kuaför</title>
+  <meta name="description" content="KUBİLAY BİRDAL SAÇ TASARIM için hazırlanan premium kuaför web sitesi. Saç boyama, balyaj, keratin, ombre, topuz ve bakım uygulamaları için Darıca'da randevu alın." />
+  <meta name="theme-color" content="#8d6a5a" />
+  <meta property="og:title" content="KUBİLAY BİRDAL SAÇ TASARIM | Darıca Kuaför" />
+  <meta property="og:description" content="Modern saç tasarımı, renk uygulamaları ve profesyonel bakım hizmetleri için Darıca'da premium kuaför deneyimi." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="format-detection" content="telephone=yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0b0b;
+      --panel:#171112;
+      --panel-soft:#1d1617;
+      --card:rgba(255,255,255,.05);
+      --line:rgba(255,255,255,.1);
+      --text:#f7eee9;
+      --muted:#ccbfb7;
+      --accent:#c99779;
+      --accent-2:#f0d7c1;
+      --glow:rgba(201,151,121,.22);
+      --shadow:0 24px 70px rgba(0,0,0,.35);
+      --radius:28px;
+      --container:min(1200px, calc(100% - 30px));
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope',system-ui,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(201,151,121,.18), transparent 26%),
+        radial-gradient(circle at 88% 16%, rgba(255,255,255,.06), transparent 18%),
+        linear-gradient(180deg,#0d0909 0%, #120d0e 35%, #0d0909 100%);
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed;inset:0;pointer-events:none;opacity:.32;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size:72px 72px;
+      mask-image:radial-gradient(circle at center, black 30%, transparent 85%);
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:var(--container);margin-inline:auto}
+    .section{padding:110px 0;position:relative}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;
+      border:1px solid var(--line);background:rgba(255,255,255,.04);backdrop-filter:blur(16px);
+      color:var(--accent-2);font-size:.74rem;letter-spacing:.28em;text-transform:uppercase
+    }
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 0 20px var(--glow)}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5vw,5rem);line-height:.94;margin:18px 0 16px}
+    .section-copy{max-width:760px;color:var(--muted);font-size:1.03rem;line-height:1.9}
+
+    .nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:1000;width:min(1180px,calc(100% - 16px));transition:transform .35s ease, opacity .35s ease}
+    .nav.hidden{transform:translateX(-50%) translateY(-140%);opacity:0}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-radius:24px;background:rgba(12,10,10,.66);border:1px solid var(--line);backdrop-filter:blur(18px);box-shadow:var(--shadow)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand-mark{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(201,151,121,.25), rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.12);font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--accent-2)}
+    .brand-text strong{display:block;font-size:.94rem;letter-spacing:.16em;text-transform:uppercase}
+    .brand-text span{display:block;font-size:.8rem;color:var(--muted);margin-top:4px}
+    .nav-links{display:flex;gap:20px;flex-wrap:wrap}
+    .nav-links a{font-size:.93rem;color:#efe5df;position:relative}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);transform:scaleX(0);transition:transform .3s ease}
+    .nav-links a:hover::after{transform:scaleX(1)}
+    .nav-cta{display:flex;gap:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:999px;font-weight:800;font-size:.94rem;border:none;cursor:pointer;transition:transform .3s ease, box-shadow .3s ease, background .3s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),#aa785f);color:#1a1210;box-shadow:0 12px 28px rgba(201,151,121,.24)}
+    .btn-secondary{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--text)}
+
+    .hero{min-height:100svh;padding:128px 0 80px;display:grid;place-items:center;position:relative;overflow:hidden}
+    .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+    .hero::before{width:560px;height:560px;right:-140px;top:40px;background:radial-gradient(circle, rgba(201,151,121,.18), transparent 62%)}
+    .hero::after{width:480px;height:480px;left:-120px;bottom:-40px;background:radial-gradient(circle, rgba(255,255,255,.05), transparent 60%)}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:26px;align-items:center}
+    .hero-copy h1{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,8vw,6.8rem);line-height:.88;margin:18px 0 18px}
+    .hero-copy p{max-width:650px;color:var(--muted);font-size:1.05rem;line-height:1.95}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+    .point{padding:18px;border-radius:22px;background:rgba(255,255,255,.04);border:1px solid var(--line);backdrop-filter:blur(14px)}
+    .point strong{display:block;font-size:1.1rem;margin-bottom:6px}
+    .point span{color:var(--muted);font-size:.9rem;line-height:1.7}
+
+    .hero-visual{display:grid;gap:16px;align-items:start}
+    .hero-tags{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .info-chip{padding:16px 18px;border-radius:22px;background:rgba(255,255,255,.045);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .info-chip strong{display:block;font-size:1rem;margin-bottom:8px}
+    .info-chip span{display:block;color:var(--muted);line-height:1.7;font-size:.92rem}
+    .hero-card{position:relative;min-height:650px;padding:30px;border-radius:36px;background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);overflow:hidden}
+    .hero-card::before{content:"";position:absolute;inset:0;background:
+      linear-gradient(135deg, rgba(255,255,255,.16), transparent 24%),
+      radial-gradient(circle at 70% 18%, rgba(201,151,121,.24), transparent 22%),
+      linear-gradient(180deg, rgba(201,151,121,.16), rgba(255,255,255,.02) 58%, rgba(8,8,8,.08));}
+    .hero-card::after{content:"";position:absolute;inset:18px;border-radius:28px;border:1px solid rgba(255,255,255,.1);opacity:.55}
+    .hero-card-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+    .card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+    .mini-badge{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font-size:.82rem;color:#f4e6dc}
+    .card-main{padding-top:52px}
+    .card-main h2{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,4vw,4.2rem);line-height:.94;margin:0 0 14px}
+    .card-main p{max-width:400px;color:#e1d3cb;line-height:1.85}
+    .service-mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+    .service-mini{padding:18px;border-radius:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}
+    .service-mini strong{display:block;margin-bottom:8px}
+    .service-mini span{display:block;color:var(--muted);font-size:.9rem;line-height:1.7}
+
+    .trust-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-28px;position:relative;z-index:5}
+    .trust-box{padding:22px;border-radius:24px;background:rgba(255,255,255,.045);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .trust-box strong{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:8px}
+    .trust-box span{color:var(--muted);line-height:1.75}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .panel{padding:30px;border-radius:30px;background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));border:1px solid var(--line);box-shadow:var(--shadow)}
+    .feature-list{display:grid;gap:16px;margin-top:24px}
+    .feature{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .feature:last-child{border-bottom:none}
+    .feature-icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(201,151,121,.12);border:1px solid rgba(255,255,255,.08);color:var(--accent-2);font-weight:800}
+    .feature strong{display:block;margin-bottom:6px}
+    .feature p{margin:0;color:var(--muted);line-height:1.8}
+
+    .ba-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:22px}
+    .ba-card{padding:24px;border-radius:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden}
+    .ba-card::before{content:"";position:absolute;inset:auto -8% -45% 34%;height:180px;background:radial-gradient(circle, rgba(201,151,121,.2), transparent 62%)}
+    .ba-card strong{position:relative;display:block;font-size:1.08rem;margin-bottom:10px}
+    .ba-card p{position:relative;margin:0;color:var(--muted);line-height:1.8}
+
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .service-card{padding:28px;border-radius:28px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+    .service-card:hover{transform:translateY(-6px);border-color:rgba(201,151,121,.34);box-shadow:0 18px 36px rgba(0,0,0,.28)}
+    .service-card::after{content:"";position:absolute;right:-20px;top:-20px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle, rgba(201,151,121,.15), transparent 65%)}
+    .service-index{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-2)}
+    .service-card h3{font-size:1.2rem;margin:12px 0 10px}
+    .service-card p{margin:0;color:var(--muted);line-height:1.8}
+
+    .review-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}
+    .review-main{padding:34px;border-radius:34px;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--line);box-shadow:var(--shadow)}
+    .review-main h3{font-family:'Playfair Display',serif;font-size:3.1rem;line-height:.95;margin:0 0 12px}
+    .review-main p{color:var(--muted);line-height:1.9}
+    .score{display:flex;align-items:flex-end;gap:14px;margin:24px 0 8px}
+    .score strong{font-family:'Playfair Display',serif;font-size:4.6rem;line-height:.8}
+    .score span{color:var(--muted)}
+    .review-list{display:grid;gap:16px}
+    .review-card{padding:22px;border-radius:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+    .review-card strong{display:block;margin-bottom:10px}
+    .review-card p{margin:0;color:var(--muted);line-height:1.8}
+
+    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:34px}
+    .gallery-main,.gallery-stack > div{position:relative;border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);background:
+      linear-gradient(140deg, rgba(255,255,255,.12), rgba(255,255,255,.03)),
+      radial-gradient(circle at 18% 18%, rgba(201,151,121,.26), transparent 22%),
+      linear-gradient(180deg,#2a2020 0%, #161213 100%)}
+    .gallery-main{min-height:580px}
+    .gallery-stack{display:grid;gap:18px}
+    .gallery-stack > div{min-height:280px}
+    .gallery-overlay{position:absolute;left:18px;right:18px;bottom:18px;padding:18px;border-radius:20px;background:rgba(12,10,10,.42);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(16px)}
+    .gallery-overlay strong{display:block;font-size:1.08rem;margin-bottom:6px}
+    .gallery-overlay span{display:block;color:var(--muted);line-height:1.7}
+
+    .cta-band{padding:30px;border-radius:32px;background:linear-gradient(135deg, rgba(201,151,121,.18), rgba(255,255,255,.04));border:1px solid var(--line);box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+    .cta-band h3{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,3vw,3.5rem);line-height:.96;margin:0 0 8px}
+    .cta-band p{margin:0;color:var(--muted);line-height:1.8;max-width:650px}
+
+    .faq-list{display:grid;gap:16px;margin-top:30px}
+    .faq-item{border:1px solid rgba(255,255,255,.08);border-radius:24px;background:rgba(255,255,255,.03);overflow:hidden}
+    .faq-question{padding:22px 24px;font-weight:800;display:flex;justify-content:space-between;gap:12px;cursor:pointer}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 24px}
+    .faq-answer p{margin:0;padding-bottom:22px;color:var(--muted);line-height:1.8}
+    .faq-item.active .faq-answer{max-height:220px}
+
+    .contact-grid{display:grid;grid-template-columns:1fr .95fr;gap:24px;margin-top:34px}
+    .contact-card{padding:30px;border-radius:30px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+    .contact-list{display:grid;gap:16px;margin-top:22px}
+    .contact-item{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .contact-item:last-child{border-bottom:none}
+    .contact-item span{display:block;color:var(--accent-2);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+    .contact-item strong,.contact-item a{font-size:1.02rem;line-height:1.7;word-break:break-word}
+    .map-wrap{overflow:hidden;border-radius:30px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);min-height:100%}
+    .map-wrap iframe{width:100%;height:100%;min-height:520px;border:0}
+
+    footer{padding:34px 0 110px;color:var(--muted)}
+    .footer-wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;padding-top:22px;border-top:1px solid rgba(255,255,255,.08)}
+    .footer-wrap strong{color:var(--text)}
+
+    .sticky-actions{position:fixed;right:18px;bottom:18px;z-index:1200;display:grid;gap:12px}
+    .sticky-actions a{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:rgba(12,10,10,.72);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);box-shadow:var(--shadow);font-size:1.15rem}
+
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease, transform .8s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    @media (max-width:1100px){
+      .hero-grid,.split,.review-layout,.gallery-grid,.contact-grid{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .trust-wrap{grid-template-columns:repeat(2,1fr)}
+      .nav-links{display:none}
+    }
+    @media (max-width:760px){
+      .section{padding:86px 0}
+      .hero{padding-top:110px}
+      .hero-points,.hero-tags,.service-mini-grid,.ba-grid,.services-grid,.trust-wrap{grid-template-columns:1fr}
+      .hero-card{min-height:auto;padding:22px}
+      .card-main{padding-top:24px}
+      .nav{top:10px;width:calc(100% - 12px)}
+      .nav-inner{padding:12px 14px;border-radius:18px}
+      .brand-text span{display:none}
+      .nav-cta .btn-secondary{display:none}
+      .sticky-actions{right:12px;bottom:12px}
+      .sticky-actions a{width:54px;height:54px}
+      .map-wrap iframe{min-height:420px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HairSalon",
+    "name":"KUBİLAY BİRDAL SAÇ TASARIM",
+    "telephone":"+90 542 773 31 02",
+    "url":"https://www.instagram.com/kubilaybirdal_kuafor/",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Bağlarbaşı, Muammer Aksoy Cd.",
+      "addressLocality":"Darıca",
+      "addressRegion":"Kocaeli",
+      "addressCountry":"TR"
+    },
+    "aggregateRating":{
+      "@type":"AggregateRating",
+      "ratingValue":"5.0",
+      "reviewCount":"1"
+    },
+    "sameAs":["https://www.instagram.com/kubilaybirdal_kuafor/"],
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"09:00","closes":"20:30"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand" aria-label="KUBİLAY BİRDAL SAÇ TASARIM">
+        <div class="brand-mark">KB</div>
+        <div class="brand-text">
+          <strong>kubilay birdal saç tasarım</strong>
+          <span>darıca kuaför deneyimi</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">salon</a>
+        <a href="#services">hizmetler</a>
+        <a href="#reviews">yorumlar</a>
+        <a href="#gallery">galeri</a>
+        <a href="#faq">sss</a>
+        <a href="#contact">iletişim</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-secondary" href="tel:+905427733102">ara</a>
+        <a class="btn btn-primary" href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">whatsapp</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">renk bakım ve saç tasarımı</span>
+        <h1>modern görünüm<br>güçlü saç dokunuşu</h1>
+        <p>
+          kubilay birdal saç tasarım darıcada saç boyama balyaj ombre keratin fön topuz ve bakım uygulamalarını tek yerde toplayan güçlü bir kuaför deneyimi sunar
+          günlük şıklıktan özel gün hazırlığına kadar saçın hem görünümünü hem hissini yükselten bir çizgi hedeflenir
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">randevu oluştur</a>
+          <a class="btn btn-secondary" href="#services">hizmetleri incele</a>
+        </div>
+        <div class="hero-points">
+          <div class="point">
+            <strong>5 0 puan</strong>
+            <span>güven veren ilk izlenim</span>
+          </div>
+          <div class="point">
+            <strong>09 00 20 30</strong>
+            <span>salı hariç geniş çalışma saati</span>
+          </div>
+          <div class="point">
+            <strong>darıca</strong>
+            <span>bağlarbaşı konumu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-tags">
+          <div class="info-chip">
+            <strong>renk uzmanlığı</strong>
+            <span>boya balyaj ombre ve saça ışıltı uygulamalarıyla canlı görünüm</span>
+          </div>
+          <div class="info-chip">
+            <strong>bakım desteği</strong>
+            <span>keratin nemlendirme parlatma ve saç düzleştirme çözümleri</span>
+          </div>
+          <div class="info-chip">
+            <strong>özel gün</strong>
+            <span>topuz fön örgü ve profesyonel bitişlerle hazır görünüm</span>
+          </div>
+        </div>
+        <div class="hero-card" id="parallax-card">
+          <div class="hero-card-inner">
+            <div class="card-top">
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <span class="mini-badge">kuaförlük</span>
+                <span class="mini-badge">saç boyama</span>
+                <span class="mini-badge">balyaj</span>
+              </div>
+              <span class="mini-badge">instagram  kubilaybirdal_kuafor</span>
+            </div>
+            <div class="card-main">
+              <h2>ışıltılı tonlar<br>bakımlı bitişler</h2>
+              <p>
+                saçın yapısına göre planlanan renk geçişleri düzgün kesim modern şekillendirme ve bakım odaklı uygulamalarla daha temiz daha dikkat çekici ve daha profesyonel bir sonuç hedeflenir
+              </p>
+              <div class="service-mini-grid">
+                <div class="service-mini">
+                  <strong>balyaj ve ombre</strong>
+                  <span>doğal geçişli renkler ve daha aydınlık saç görünümü</span>
+                </div>
+                <div class="service-mini">
+                  <strong>keratin ve düzleştirme</strong>
+                  <span>daha sakin daha kontrollü ve bakımlı saç dokusu</span>
+                </div>
+                <div class="service-mini">
+                  <strong>fön topuz örgü</strong>
+                  <span>günlük kullanım ve özel gün hazırlıkları için tamamlayıcı stil</span>
+                </div>
+                <div class="service-mini">
+                  <strong>bakım ve parlatma</strong>
+                  <span>nem desteğiyle daha sağlıklı ve daha canlı görünüm</span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+              <span class="mini-badge">çarşamba pazartesi açık</span>
+              <span class="mini-badge">salı kapalı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container trust-wrap reveal">
+    <div class="trust-box">
+      <strong>geniş hizmet listesi</strong>
+      <span>renkten bakıma örgüden topuza kadar çok sayıda uygulama tek salonda toplanmış durumda</span>
+    </div>
+    <div class="trust-box">
+      <strong>bakım artı stil</strong>
+      <span>sadece görünüm değil saçın hissini güçlendiren bakım odaklı yaklaşım öne çıkar</span>
+    </div>
+    <div class="trust-box">
+      <strong>özel gün uyumu</strong>
+      <span>topuz fön örgü ve son dokunuşlarla organizasyon öncesi hazırlık kolaylaşır</span>
+    </div>
+    <div class="trust-box">
+      <strong>hızlı iletişim</strong>
+      <span>telefon ve whatsapp üzerinden tek tıkla randevu akışı hazırdır</span>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">salon çizgisi</span>
+        <h2 class="section-title">günlük şıklıkla<br>profesyonel görünüm arası denge</h2>
+        <p class="section-copy">
+          kubilay birdal saç tasarım klasik kuaför hizmetini daha güncel bir çizgiyle birleştirir
+          renk uygulamaları bakım protokolleri ve şekillendirme hizmetleri aynı çatı altında birleştiği için kullanıcı için daha rahat daha bütünlüklü bir salon deneyimi oluşur
+        </p>
+        <div class="feature-list">
+          <div class="feature">
+            <div class="feature-icon">01</div>
+            <div>
+              <strong>renk geçişlerinde modern duruş</strong>
+              <p>balyaj ombre ve saça ışıltı işlemlerinde sert değil doğal ve daha premium duran geçişler hedeflenir</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">02</div>
+            <div>
+              <strong>bakım ve işlem dengesi</strong>
+              <p>keratin nemlendirme parlatma ve saç düzleştirme gibi destekleyici işlemler görünümü uzun süre taşır</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">03</div>
+            <div>
+              <strong>tek randevuda tamamlayıcı hizmetler</strong>
+              <p>fön manikür pedikür kaş alımı ve örgü gibi ek hizmetlerle daha komple bir bakım hissi oluşur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <span class="eyebrow">öncesi sonrası mantığı</span>
+        <div class="ba-grid">
+          <div class="ba-card">
+            <strong>öncesi</strong>
+            <p>mat dengesiz tonlu kabaran form tutmayan ya da bakımsız görünen saç yapısı</p>
+          </div>
+          <div class="ba-card">
+            <strong>sonrası</strong>
+            <p>daha parlak daha kontrollü daha düzenli ve fotoğrafta daha güçlü duran saç görünümü</p>
+          </div>
+          <div class="ba-card">
+            <strong>renk etkisi</strong>
+            <p>yüzü aydınlatan ton geçişleri ve daha pahalı görünen doğal saç hissi</p>
+          </div>
+          <div class="ba-card">
+            <strong>bakım sonucu</strong>
+            <p>nemli parlak sakin ve şekillendirmesi daha rahat saç yapısı</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">hizmet menüsü</span>
+        <h2 class="section-title">zengin hizmet yelpazesiyle<br>tek yerde tam bakım</h2>
+        <p class="section-copy">
+          verdiğin liste geniş olduğu için burada satışı en güçlü taşıyacak başlıkları öne çıkardım ama alt mantıkta tüm hizmet çizgisi korunuyor
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-index">01</div>
+          <h3>saç boyama ve saç cilalama</h3>
+          <p>dip boya komple renk eşitleme saç cilalama ve ton tazeleme işlemleriyle daha canlı daha temiz bir görünüm</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-index">02</div>
+          <h3>balyaj ombre ve ışıltı</h3>
+          <p>doğal ışık etkisi veren geçişler ve saça derinlik katan modern renk çalışmaları</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-index">03</div>
+          <h3>keratin brezilya düzleştirme</h3>
+          <p>kabaran zor şekil alan saçlar için daha düz daha sakin ve daha pürüzsüz görünüm hedeflenir</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-index">04</div>
+          <h3>kesim fön perçem ve çocuk saç kesimi</h3>
+          <p>günlük hayata uygun kesim formu hızlı şekillendirme ve temiz bitiş için tamamlayıcı hizmetler</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-index">05</div>
+          <h3>topuz örgü twist ve özel gün saçı</h3>
+          <p>düğün nişan davet çekim ve etkinlikler için özenli toplama ve profesyonel son dokunuşlar</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-index">06</div>
+          <h3>manikür pedikür ağda ve kaş alımı</h3>
+          <p>tek randevuda daha derli toplu görünüm sağlayan destekleyici bakım işlemleri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container review-layout">
+      <div class="review-main reveal">
+        <span class="eyebrow">yorumlar ve güven</span>
+        <h3>ilk bakışta güven veren<br>temiz salon algısı</h3>
+        <p>
+          burada görünen 5 0 puan özellikle yeni müşterinin kararını hızlandıran güçlü bir sinyal
+          bu tarz salonlarda web sitesiyle birlikte güven profesyonellik ve hizmet çeşitliliği iyi anlatıldığında telefonla dönüş alma ihtimali ciddi şekilde artar
+        </p>
+        <div class="score">
+          <strong>5 0</strong>
+          <span>güçlü ilk izlenim<br>premium hizmet algısı</span>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener">bilgi al</a>
+      </div>
+      <div class="review-list">
+        <div class="review-card reveal">
+          <strong>geniş hizmet etkisi</strong>
+          <p>müşteri tek bir işlem değil tam bakım deneyimi bulduğunu hissettiğinde salon daha güçlü algılanır</p>
+        </div>
+        <div class="review-card reveal">
+          <strong>renk artı bakım dengesi</strong>
+          <p>boya sonrası bakım ve parlatma desteği sunan salonlar daha profesyonel görünür</p>
+        </div>
+        <div class="review-card reveal">
+          <strong>özel gün potansiyeli</strong>
+          <p>topuz örgü fön ve şekillendirme hizmetleri etkinlik öncesi tercih edilme oranını yükseltir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">görsel vitrin</span>
+        <h2 class="section-title">renk geçişleri bakım sonuçları<br>ve salon estetiği için alan</h2>
+        <p class="section-copy">
+          gerçek fotoğraflar eklenince bu kısım çok daha sert satar özellikle balyaj ombre keratin öncesi sonrası ve topuz görselleri burada baya iş yapar
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-main reveal">
+          <div class="gallery-overlay">
+            <strong>balyaj ombre ve boya sonuçları</strong>
+            <span>uzun saç renk geçişleri ve doğal ışıkta çekilmiş sonuç görselleri için büyük alan</span>
+          </div>
+        </div>
+        <div class="gallery-stack">
+          <div class="reveal">
+            <div class="gallery-overlay">
+              <strong>keratin ve bakım dönüşümü</strong>
+              <span>daha düz daha parlak daha sakin saç görünümünü göstermek için ideal</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="gallery-overlay">
+              <strong>topuz örgü ve özel gün</strong>
+              <span>yakın plan şık çekimler salonun premium hissini ciddi yükseltir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h3>saçını yenilemek için<br>bir mesaj yeter</h3>
+          <p>uygun saat bilgisi almak işlem danışmak ya da direkt randevu oluşturmak için whatsapp üzerinden hızlıca ulaşılabilir</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20randevu%20olu%C5%9Fturmak%20istiyorum" target="_blank" rel="noopener">whatsapp ile yaz</a>
+          <a class="btn btn-secondary" href="tel:+905427733102">hemen ara</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">sık sorulanlar</span>
+        <h2 class="section-title">randevu öncesi en çok<br>merak edilen şeyler</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active reveal">
+          <div class="faq-question">randevu nasıl alınır <span>+</span></div>
+          <div class="faq-answer"><p>telefonla arayarak ya da whatsapp üzerinden yazarak hızlı şekilde randevu oluşturulabilir</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">hangi günler açık <span>+</span></div>
+          <div class="faq-answer"><p>çarşamba perşembe cuma cumartesi pazar ve pazartesi 09 00 ile 20 30 arası açıktır salı günü kapalıdır</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">hangi işlemler öne çıkıyor <span>+</span></div>
+          <div class="faq-answer"><p>saç boyama balyaj ombre brezilya tarzı düzleştirme keratin fön topuz örgü ve bakım uygulamaları öne çıkan hizmetler arasında</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">özel gün hazırlığı için önceden yazmak gerekir mi <span>+</span></div>
+          <div class="faq-answer"><p>evet topuz örgü ve özel gün saçı planlaması için önceden iletişime geçmek saat bulmayı kolaylaştırır</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">iletişim ve konum</span>
+        <h2 class="section-title">darıcada ulaşımı kolay<br>randevusu hızlı salon</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <p class="section-copy" style="margin-top:0">
+            kubilay birdal saç tasarım için iletişim alanı direkt dönüş odaklı kuruldu telefon whatsapp instagram ve konum bilgisi tek yerde hazır
+          </p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>telefon</span>
+              <a href="tel:+905427733102">0542 773 31 02</a>
+            </div>
+            <div class="contact-item">
+              <span>instagram</span>
+              <a href="https://www.instagram.com/kubilaybirdal_kuafor/" target="_blank" rel="noopener">@kubilaybirdal_kuafor</a>
+            </div>
+            <div class="contact-item">
+              <span>adres</span>
+              <strong>Bağlarbaşı Muammer Aksoy Cd 41700 Darıca Kocaeli</strong>
+            </div>
+            <div class="contact-item">
+              <span>çalışma saatleri</span>
+              <strong>çarşamba perşembe cuma cumartesi pazar pazartesi 09 00 20 30<br>salı kapalı</strong>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+            <a class="btn btn-primary" href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noopener">whatsapp</a>
+            <a class="btn btn-secondary" href="tel:+905427733102">ara</a>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            title="KUBİLAY BİRDAL SAÇ TASARIM harita"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Ba%C4%9Flarba%C5%9F%C4%B1%20Muammer%20Aksoy%20Cd.%2041700%20Dar%C4%B1ca%20Kocaeli&z=16&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrap">
+        <div>
+          <strong>kubilay birdal saç tasarım</strong><br>
+          darıca kuaför hizmetleri
+        </div>
+        <div>
+          saç boyama balyaj bakım topuz ve daha fazlası için hızlı iletişim kanalları hazır
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-actions">
+    <a href="tel:+905427733102" aria-label="ara">☎</a>
+    <a href="https://wa.me/905427733102?text=merhaba%20kubilay%20birdal%20sa%C3%A7%20tasar%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noopener" aria-label="whatsapp">✦</a>
+  </div>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+
+    const faqs = document.querySelectorAll('.faq-item');
+    faqs.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => item.classList.toggle('active'));
+    });
+
+    const nav = document.getElementById('navbar');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const current = window.pageYOffset;
+      if(current > lastScroll && current > 120) nav.classList.add('hidden');
+      else nav.classList.remove('hidden');
+      lastScroll = current <= 0 ? 0 : current;
+    });
+
+    const card = document.getElementById('parallax-card');
+    if (window.matchMedia('(min-width: 1025px)').matches) {
+      window.addEventListener('mousemove', (e) => {
+        const x = (window.innerWidth / 2 - e.clientX) / 42;
+        const y = (window.innerHeight / 2 - e.clientY) / 42;
+        card.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      });
+    }
+  </script>
+</body>
+</html>
